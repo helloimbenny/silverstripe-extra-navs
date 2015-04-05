@@ -10,9 +10,8 @@
             "email": "benny@bottle.is"
         }
     ],
-    "require": {
-        "silverstripe/framework": "~3.1.0"
-    },
+    "require": {},
+    "require-dev": {},
     "autoload": {
         "psr-4": {
             "BottleCreative\\SilverStripe\\ExtraNav\\": "Code/"
