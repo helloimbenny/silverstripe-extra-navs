@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Provide $SecondaryNav and $FooterNav global template variable for looping through.
+ * Provide $UtilityNav, $FooterNav, and $SocialMediaNav global template variable for looping through.
  *
  * @author       Benny Lin <benny@bottle.is>
  * @copyright    Bottle Creative
@@ -14,6 +14,9 @@ class NavTemplateGlobalProvider implements \TemplateGlobalProvider {
       ),
       'FooterNav' => array(
         'method'  => 'getFooterNav'
+      ),
+      'SocialMediaNav' => array(
+        'method'  => 'getSocialMediaNav'
       )
     );
   }
@@ -24,5 +27,9 @@ class NavTemplateGlobalProvider implements \TemplateGlobalProvider {
 
   public static function getFooterNav() {
     return DataObject::get('FooterNav');
+  }
+
+  public static function getSocialMediaNav() {
+    return DataObject::get('SocialMediaNav');
   }
 }
